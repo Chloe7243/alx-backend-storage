@@ -1,2 +1,2 @@
 // Get all
-db.collection("school").find();
+db.school.find()
