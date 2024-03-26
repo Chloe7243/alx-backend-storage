@@ -1,2 +1,2 @@
 // Find Holberton Scool
-db.school.find({ "name": 'Holberton school' })
+db.school.find({ name: "Holberton school" });
