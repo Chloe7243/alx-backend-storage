@@ -3,4 +3,7 @@
 
 
 def insert_school(mongo_collection, **kwargs):
-    return mongo_collection.insert(kwargs)
+    document = {}
+    for key, value in kwargs.items():
+        document[key] = value
+    return mongo_collection.insert(document)

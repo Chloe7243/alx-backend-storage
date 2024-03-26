@@ -2,5 +2,5 @@
 """ Python function that changes all topics of a school document based on the name """
 
 
-def update_topics(mongo_collection, topic):
+def schools_by_topic(mongo_collection, topic):
     return list(mongo_collection.find_one({topic}))
