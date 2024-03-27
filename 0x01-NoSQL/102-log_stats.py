@@ -9,7 +9,8 @@ if __name__ == '__main__':
     '''
     provides stats about nginx logs
     '''
-    nginx_collection = MongoClient('mongodb://127.0.0.1:27017').logs.nginx
+    client = MongoClient('mongodb://127.0.0.1:27017')
+    nginx_collection = client.logs.nginx
 
     n_logs = nginx_collection.count_documents({})
     print(f'{n_logs} logs')
